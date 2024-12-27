@@ -1,0 +1,19 @@
+.delete-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.delete-container p {
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.delete-container p:nth-child(1) {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.delete-container p:nth-child(2) {
+    font-size: 1.2rem;
+    color: red;
+}

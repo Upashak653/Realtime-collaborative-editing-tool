@@ -1,0 +1,104 @@
+/* Hero.css */
+.hero {
+    display: flex;
+    background: linear-gradient(beige,white);
+    color: darkgreen;
+    height: 92vh;
+    padding-inline: 30px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-text {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    word-spacing: 1%;
+    font-family:verdana;
+}    
+.hero-description {
+    font-size: 1.2rem;
+    max-width: 400px;
+    letter-spacing:10px;
+    margin-bottom: 20px;
+}
+
+
+.hero-image {
+    flex: 1;
+    background: url('Images/homeimage.png') center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+}/* From Uiverse.io by nikk7007 */ 
+.btn {
+ --color: #00A97F;
+ --color2: rgb(10, 25, 30);
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+ text-decoration:none;
+}
+
+.btn::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btn::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+ color: var(--color2);
+}
+
+.btn:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+@keyframes floating{
+    0%{
+        transform:translate(-50%,-50%)
+    }
+    50%{
+        transform:translate(-50%,-50%)
+    }
+    100%{
+        transform:translate(-50%,-50%)
+    }
+}

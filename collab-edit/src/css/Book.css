@@ -1,0 +1,62 @@
+.book-card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-details {
+    margin-bottom: 16px;
+  }
+  
+  .book-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .book-details p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .content-preview {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .book-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+  }
+  
+  .delete-btn {
+    background-color: #F44336;
+  }
+  
+  .edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+  .edit-btn, .delete-btn {
+    transition: background-color 0.3s ease;
+  }
+  
